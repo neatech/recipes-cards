@@ -1,0 +1,417 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+    background: url(bilder/bg_wall.jpg);
+}
+a {
+    text-decoration: none;
+}
+#wrapper {
+	height: 100%;
+	min-height: 100%;
+	height: auto !important;
+	overflow: hidden !important;
+	margin: 0 auto;
+	text-align: center;
+    padding: 20px 0 0 10px;
+}
+/*--------------------------------------------
+    Quick Flip
+----------------------------------------------*/
+.quickFlip {
+    width: 225px;
+    height: 350px;
+    margin:0 10px 10px 0;
+    float: left;
+    position: relative;
+}
+.back, .front {
+    text-align: center;
+}
+
+/*------------------
+    Vorderseite
+--------------------*/
+.quickFlip .front {
+    color: #fff;
+    font-weight: bold;
+    overflow: hidden;
+    background: #000;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.quickFlip .front img {
+    width: 180px;
+    height: 110px;
+    margin: 2px 0 5px 0;
+    
+}
+
+.quickFlip .front h1 {
+    font-family: Amatic SC, cursive;
+    font-size: 56px;
+    letter-spacing: 0.5px;
+    top: 0px;
+    position: absolute;
+    left: 75px;  
+}
+.quickFlip .front h1 span {
+   position: absolute;
+   left: 0px;
+   top: 50px;
+   letter-spacing: 1px;
+}
+.quickFlip .front h4{
+    font-family: Amatic SC, cursive;
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    color: #ff6600;
+}
+.quickFlip .front h5 {
+    position: absolute;
+    top: 245px;
+    left: 45px; 
+}
+.quickFlip .front p.re{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    font-family: Amatic SC, cursive;
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    color: #ff6600;
+}
+.quickFlip .front p.re a:hover {
+    color: #ffffcc;
+}
+.quickFlip .front .scollzut {
+    width: 202px;
+    height: 105px;
+    overflow-y: scroll;
+    overflow: auto;
+}
+.quickFlip .front .hallo {
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    width: 202px;
+    height: 150px;
+}
+.quickFlip .front .hallo a {
+    width: 180px;
+    background: #990066;
+    color: #fff;
+    padding: 5px 3px;
+    border-radius: 3px;
+    display: block;
+    margin-left: 10px;
+}
+.quickFlip .front .hallo a:hover {
+    background: #ff6600;
+}
+.quickFlip .front .hallo p {
+    margin: 3px 0;
+}
+.quickFlip .front ul li {
+    text-align: left;
+    margin-left: 34px;
+    color: #ffffcc;
+}
+.quickFlip .front a.del, .quickFlip .front a.bea, .quickFlip .front a.bildBea  {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    height: 25px;
+    width: 25px;
+    font-weight: bold;
+    font-family: Cabin Sketch, cursive;
+	font-size: 21px;
+    background: #990066;
+    color: #fff;
+    border-radius: 25px;
+    z-index: 1006;
+}
+.quickFlip .front a:hover.del, .quickFlip .front a:hover.bea, .quickFlip .front a:hover.bildBea
+{
+    background: #ff6600;
+}
+.quickFlip .front a.bea {
+    top: 6px;
+    left: 6px;
+}
+.quickFlip .front a.bildBea {
+    top: 48px;
+    right: 30px;
+}
+/*-----------------------------------------------------
+    --> Accordion
+-------------------------------------------------------*/
+#accordfix {
+    
+}
+#accordion {
+    position: absolute;
+    top: 120px;
+    left: 28px;
+    background: #fff;
+}
+#accordion p {
+    margin-bottom: 2px;
+}
+#accordion h3 {
+    padding: 3px 0;
+    background: #990066;
+    border-bottom: solid 1px #000;
+    font-size: 12px;
+    cursor: pointer;
+}
+#accordion h3.ui-accordion-header-active {
+    background: #ff6600;
+}
+
+#accordion div {
+    margin: 10px;
+}
+#accordion  input[type=text], #accordion  input[type=password]{
+    padding: 2px 3px;
+    border: solid 1px #000;
+    border-radius: 3px;
+}
+#accordion form input[type=submit] {
+    background: #990066;
+    color: #fff;
+    padding: 3px;
+    border: 0 none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 3px;
+}
+#accordion form input[type=submit]:hover {
+    background: #ff6600;
+}
+/*------------------
+    Rückseite
+--------------------*/
+.quickFlip .back {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+}
+.quickFlip .back #about {
+    padding: 20px;
+    text-align: left;
+}
+.quickFlip .back #about p {
+    margin-bottom: 10px;
+}
+.quickFlip .back ol {
+    font-family: Cabin Sketch, kursiv;
+    font-weight: bold;
+    font-size: 21px;
+    text-align: left;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    width: 210px;
+    height: 280px;
+    overflow-y: scroll;
+    overflow: auto;
+    margin-left: -35px;
+}
+.quickFlip .back ol li {
+    line-height: 10px;
+    margin:  0 0 10px 40px;
+    color: #990066;
+}
+.quickFlip .back ol li span {
+    font-family: Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: #000;
+}
+.quickFlip .back p.re{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    color: #990066;
+    font-weight: 700;
+    z-index: 1002;
+    font-family: Amatic SC, cursive;
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+}
+.quickFlip .back p.re:hover {
+    color: #ff6600;
+}
+.quickFlip .back button {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    background: #990066;
+    color: #fff;
+    padding: 5px;
+    border: 0 none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.quickFlip .back button:hover {
+    background: #ff6600;
+}
+.quickFlip .back a {
+    background: #990066;
+    color: #fff;
+    padding: 5px;
+    border: 0 none;
+    border-radius: 3px;
+}
+.quickFlip .back a:hover {
+    background: #ff6600;
+}
+.quickFlipCta {
+    color: #ff6600;
+}
+.quickflipCta:hover {
+    color: #ffffcc;
+}
+/*-----------------------------------------------------
+    --> Counter
+-------------------------------------------------------*/
+.stat {
+	background: #990066;
+	text-align: center;
+	width: 100px;
+    height: 80px;
+    border-radius: 100px;
+    padding: 10px 0;
+    margin-left: -10px;
+    position: absolute;
+    z-index: 1001;
+    bottom: -20px;
+}
+.stat-count {
+    font-weight: bold;
+    font-family: Cabin Sketch, cursive;
+	font-size: 36px;
+	overflow: hidden;
+	padding: 0;
+    
+}
+.stat p.p2 {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+/*-----------------------------------------------------
+    --> insert - Admin-Seite
+-------------------------------------------------------*/
+
+#insertCont {
+    width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px;
+}
+#insertCont h1 {
+    font-family: Amatic SC, cursive;
+    font-size: 50px;
+    letter-spacing: 0.3px;
+    margin: 20px 0 20px 90px;
+}
+#insertCont form {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+}
+#insertCont form h3 {
+    margin: 10px 0 5px 0;
+    font-family: Amatic SC, cursive;
+    font-size: 36px;
+    letter-spacing: 0.3px;
+}
+#insertCont form h4 {
+    margin-bottom: 10px;
+}
+#insertCont form p {
+    margin: 2px 0;
+}
+#insertCont form p span{
+    width: 150px;
+    display: inline-block;
+}
+#insertCont form input[type=submit] {
+    background: #990066;
+    color: #fff;
+    padding: 5px;
+    border: 0 none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#insertCont form  input[type=text]{
+    width: 60%;
+    padding: 5px;
+    border: solid 1px #000;
+    border-radius: 3px;
+    width: 200px;
+}
+#insertCont form .tier input[type=text], #insertCont form .gemuese input[type=text], #insertCont form .gewuerze input[type=text], #insertCont form .nahrung input[type=text]{
+    padding: 5px;
+    border: 0 none;
+    border-radius: 3px;
+    width: 200px;
+}
+#insertCont .tier {
+    background-color: #8EE5EE;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#insertCont .gemuese {
+    background-color: #C1FFC1;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#insertCont .gewuerze {
+    background-color: #EEDC82;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#insertCont .nahrung {
+    background-color: #FFA54F;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.textfeld {
+    position: relative;
+    width: 90%;
+    height: 80px;
+}
+.textfeld textarea {
+    position: absolute;
+    left: 100px;
+    width: 70%;
+    
+
+}
+.textfeld h5 span {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    font-family: Cabin Sketch, kursiv;
+    font-weight: bold;
+    font-size: 21px;
+    color: #990066;
+}
+
